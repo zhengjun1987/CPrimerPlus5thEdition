@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.7)
+project(CPrimerPlus5thEdition)
+set(CMAKE_C_STANDARD 99)
+#set(SOURCE_FILES chapter02/first.c chapter02/nogood.c chapter02/fathm_ft.c chapter02/two_func.c chapter02/excise8.c chapter02/excise1.c chapter02/exercise2.c)
+set(SOURCE_FILES chapter03/rhodium.c)
+add_executable(CPrimerPlus5thEdition ${SOURCE_FILES})
