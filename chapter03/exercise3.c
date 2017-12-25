@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-void main(){
+void e3(){
     printf("%d %d\n", sizeof(int32_t), sizeof(__int32_t));// 4 4
 
     float g,h;
