@@ -9,7 +9,7 @@
 
 #define TOES  20
 
-void main(){
+void pz(){
     float area,circum,radius;
     printf("What is the radius of your pizza?\n");
     scanf("%f",&radius);
