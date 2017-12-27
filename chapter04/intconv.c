@@ -5,7 +5,7 @@
 
 #define PAGES 336
 #define WORDS 65618
-void main(){
+void ic(){
     short num = PAGES,mnum = -PAGES;
     printf("num as short and unsigned short:%hd %hu\n",num,num);
 //    num as short and unsigned short:336 336
