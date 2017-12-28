@@ -4,7 +4,7 @@
 
 #include <printf.h>
 
-void main(){
+void ip(){
     int age;
     float  assets;
     char pet[30];//将字符串扫描输入字符数组时无需在变量名前加&
