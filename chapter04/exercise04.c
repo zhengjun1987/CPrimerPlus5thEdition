@@ -34,7 +34,7 @@ void test4_8_4();
 
 void test4_8_5();
 
-void main() {
+void e04() {
 //    test4_7_2();
 //    test4_7_4();
 //    test4_7_5();
