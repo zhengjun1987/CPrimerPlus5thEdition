@@ -4,7 +4,7 @@
 
 #include <printf.h>
 
-void main() {
+void ct() {
     char c;
     int i;
     float fl;
@@ -17,3 +17,6 @@ void main() {
     c = 5212205.17;
     printf("Now c = %c\n", c);
 }
+//c = C, i = 67,fl = 67.00
+//c = D, i = 203,fl = 339.00
+//Now c = V
