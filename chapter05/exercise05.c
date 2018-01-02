@@ -32,7 +32,7 @@ void test5_11_01();
 
 void test5_11_02();
 
-void main() {
+void e05() {
 //    test5_10_1();
 //    test5_10_2();
 //    test5_10_05();
