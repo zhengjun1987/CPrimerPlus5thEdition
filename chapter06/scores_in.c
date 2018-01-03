@@ -6,7 +6,7 @@
 #define SIZE 10
 #define PAR 72
 
-void main() {
+void sc() {
     int score[SIZE];
     int sum = 0;
     float average;
