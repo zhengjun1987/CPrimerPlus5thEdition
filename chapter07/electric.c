@@ -12,7 +12,7 @@
 #define BASE1 (RATE1*BREAK1)
 #define BASE2 (RATE1*BREAK1+RATE2*(BREAK2-BREAK1))
 
-void main(){
+void el(){
     double kwh,bill;
     printf("Enter the kwh used:\n");
     scanf("%lf",&kwh);
