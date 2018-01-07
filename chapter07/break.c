@@ -4,7 +4,7 @@
 
 #include <printf.h>
 
-void main(){
+void bk(){
     float length,width;
     printf("Enter the length of the rectangle:\n");
     while (scanf("%f",&length)==1){
