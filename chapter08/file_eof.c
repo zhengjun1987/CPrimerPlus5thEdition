@@ -5,8 +5,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+FILE * getFile();
+
 void fe(){
     int ch;
+    FILE *fp = getFile();
+    while ((ch = getc(fp)) != EOF)
+        putchar(ch);
+    fclose(fp);
+}
+
+FILE * getFile() {
     FILE * fp;
     char file_name[50];
     printf("Enter the name of the file:\n");
@@ -16,9 +25,7 @@ void fe(){
         printf("Fail to open the file:%s\n",file_name);
         exit(1);
     }
-    while ((ch = getc(fp)) != EOF)
-        putchar(ch);
-    fclose(fp);
+    return fp;
 }
 //Enter the name of the file:
 ///Users/zhengjun/CLionProjects/CPrimerPlus5thEdition/chapter08/lyrics.txt

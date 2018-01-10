@@ -11,7 +11,7 @@ bool bad_limits(int start, int stop, const int min, const int max);
 
 double squares_sum(int start, int stop);
 
-void main() {
+void ck() {
     const int MIN = -1000;
     const int MAX = 1000;
     int start, stop;
@@ -49,7 +49,7 @@ double squares_sum(int start, int stop) {
 bool bad_limits(int start, int stop, const int min, const int max) {
     bool not_good = false;
     if (start > stop) {
-        printf("%d isn't smaller than %d.\n");
+        printf("%d isn't smaller than %d.\n",start,stop);
         return true;
     }
     if (start < min || stop < min) {
