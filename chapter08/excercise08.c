@@ -7,7 +7,7 @@
 
 void e08_10_02();
 
-int main(){
+int e08(){
 //    e08_10_02();
     FILE * fp;
     char file_name[90];
