@@ -1,9 +1,7 @@
 //  Author:Zheng Jun
-//  Date:2018/1/11
+//  Date:2018/1/12
 //  E-mail:zhengjun1987@outlook.com
 
-#ifndef CPRIMERPLUS5THEDITION_HOTEL_H
-#define CPRIMERPLUS5THEDITION_HOTEL_H
 #define QUIT    5
 #define HOTEL1  80.00
 #define HOTEL2 125.00
@@ -14,7 +12,7 @@
 
 
 int menu();
-int getnights();
-void showprices(double, int);
 
-#endif //CPRIMERPLUS5THEDITION_HOTEL_H
+int getnights();
+
+void showprices(double, int);
