@@ -4,7 +4,7 @@
 
 #include <printf.h>
 
-int main(){
+int ps(){
     char *mesg = "Don't be a fool!";
     char *copy;
     copy = mesg;
