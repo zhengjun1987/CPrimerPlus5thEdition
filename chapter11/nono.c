@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-int main(){
+int nn(){
     char side_a[] = "SIDE_A";
 //    char dont[]={'W','O','W','!'};//WOW!SIDE_B
     char dont[]={'W','O','W','!','\0'};//WOW!       作为字符串的字符数组最后一个element必须是'\0'
