@@ -1,1 +1,7 @@
 https://github.com/zhengjun1987hz/CPrimerPlus5thEdition.git
+
+2018年02月05日02:29:11统计代码行数
+192:CPrimerPlus5thEdition zhengjun$ find . -name "*.c"|xargs cat|grep -v -e ^$ -e ^\s*\/\/.*$|wc -l
+    3634
+192:CPrimerPlus5thEdition zhengjun$ find . -name "*.c"|xargs cat|grep -v ^$|wc -l
+    5994

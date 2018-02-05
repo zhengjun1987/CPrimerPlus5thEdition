@@ -11,32 +11,67 @@
 
 void stresort(char *pString[], int count);
 
-int main(){
+void stresort_burble(char *pString[], int count);
+
+int stsort() {
     char input[LIM][SIZE];
     char *ptr[LIM];
-    int k,count = 0;
-    printf("Enter up to %d lines, and I will sort them.\n",LIM);
+    int count = 0;
+    printf("Enter up to %d lines, and I will sort them.\n", LIM);
     puts("To stop,press Enter key at a line's start.");
-    while (count < LIM && gets(input[count])!=NULL && input[count][0] != '\0'){
+    while (count < LIM && gets(input[count]) != NULL && input[count][0] != '\0') {
         ptr[count] = input[count];
         count++;
     }
-    stresort(ptr,count);
+    putchar('\n');
+//    stresort(ptr,count);//选择排序
+    stresort_burble(ptr, count);//冒泡排序
     puts("\nHere is the sorted list:");
     for (int i = 0; i < count; ++i) {
-        puts(*(ptr+i));
+        puts(*(ptr + i));
     }
     return 0;
 }
 
+void stresort_burble(char *pString[], int count) {
+    char *temp;
+    for (int i = count - 1; i > 0; --i) {
+        for (int j = 0; j < i; ++j) {
+            if (strcmp(pString[j], pString[j + 1]) > 0) {
+                temp = pString[j];//注意参数符号
+                pString[j] = pString[j + 1];
+                pString[j + 1] = temp;
+            }
+        }
+    }
+}
+//Enter up to 20 lines, and I will sort them.
+//To stop,press Enter key at a line's start.
+//warning: this program uses gets(), which is unsafe.
+//edison
+//canon
+//david
+//barry
+//aron
+//
+//Here is the sorted list:
+//aron
+//barry
+//canon
+//david
+//edison
+//
+//Process finished with exit code 0
+
+/* 选择排序：依次选一个与余下的比小，小的那个往前排 */
 void stresort(char *pString[], int count) {
     char *temp;
     for (int i = 0; i < count - 1; ++i) {
-        for (int j = i+1; j < count; ++j) {
-            if (strcmp(pString[i],pString[j])>0){
+        for (int j = i + 1; j < count; ++j) {
+            if (strcmp(pString[i], pString[j]) > 0) {
                 temp = pString[i];
                 pString[i] = pString[j];
-                pString[j]=temp;
+                pString[j] = temp;
             }
         }
     }
