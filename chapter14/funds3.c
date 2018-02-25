@@ -15,7 +15,7 @@ struct fund {
 
 double fund_sum2(struct fund fund);
 
-int main() {
+int fds3() {
     struct fund stan = {
             "Garlic-Melon Bank",
             3024.72,
