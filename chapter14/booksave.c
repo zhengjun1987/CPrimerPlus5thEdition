@@ -16,7 +16,7 @@ struct book {
     float value;
 };
 
-int main() {
+int bksv() {
     struct book library[MAXBOOKS];
     int index, filecount, count = 0, size = sizeof(struct book);
     FILE *books;
@@ -60,3 +60,45 @@ int main() {
     fclose(books);
     return 0;
 }
+//Please add new book titles.
+//Press [ENTER] at the start of a line to stop.
+//三国演义
+//        Now enter the author:
+//        罗贯中
+//Now enter the value:
+//39
+//Enter the next title:
+//红楼梦
+//        Now enter the author:
+//        曹雪芹
+//Now enter the value:
+//35
+//Enter the next title:
+//水浒传
+//        Now enter the author:
+//        罗贯中
+//Now enter the value:
+//35
+//Enter the next title:
+//西游记
+//        Now enter the author:
+//        吴承恩
+//Now enter the value:
+//39.0
+//Enter the next title:
+//金瓶梅
+//        Now enter the author:
+//        兰陵笑笑生
+//Now enter the value:
+//40
+//Enter the next title:
+//
+//Here is a list of books:
+//三国演义 by 罗贯中 :$39.00
+//红楼梦 by 曹雪芹 :$35.00
+//水浒传 by 罗贯中 :$35.00
+//西游记 by 吴承恩 :$39.00
+//金瓶梅 by 兰陵笑笑生 :$40.00
+//Bye!
+//
+//Process finished with exit code 0
