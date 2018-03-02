@@ -11,7 +11,7 @@ enum spectrum {red,orange,yellow,green,blue,violet};
 
 const char *colors[] = {"red","orange","yellow","green","blue","violet"};
 
-int main(){
+int enm(){
     char choice[LEN];
     enum spectrum color;
     bool color_is_found = false;
