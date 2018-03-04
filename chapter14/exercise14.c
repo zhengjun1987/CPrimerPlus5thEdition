@@ -25,6 +25,21 @@ unsigned int get_year_days(int month_id);
 
 void e14_17_05();
 
+void e14_17_06();
+
+typedef struct name {
+    char first[20];
+    char last[20];
+} NAME;
+
+typedef struct bem {
+    int limbs;
+    NAME title;
+    char type[30];
+} BEM;
+
+void showNameInfo(BEM *pBem);
+
 typedef struct house HOUSE;
 typedef struct month MONTH;
 const MONTH year[12] = {
@@ -51,6 +66,30 @@ typedef struct lens {
 int main() {
 //    e14_17_02();
 //    e14_17_05();
+//    e14_17_06();
+    BEM *pb;
+    BEM deb = {
+            6,
+            {"Bebnazel","Gerklpok"},
+            "Arcturan"
+    };
+    pb = &deb;
+    printf("%d\n",deb.limbs);
+    printf("%s\n",pb->type);
+    printf("%s\n",pb->type+2);
+    showNameInfo(pb);
+//    6
+//    Arcturan
+//    cturan
+//    Bebnazel Gerklpok is a 6-limbed Arcturan
+    return 0;
+}
+
+void showNameInfo(BEM *pBem) {
+    printf("%s %s is a %d-limbed %s\n",pBem->title.first,pBem->title.last,pBem->limbs,pBem->type);
+}
+
+void e14_17_06() {
     LENS lenses[10];
     const char *string = "Remarkatar";
     for (int i = 0; i < 10; ++i) {
@@ -73,7 +112,6 @@ int main() {
 //    Remarkatar focus length:500mm fstop:f2.00
 //
 //    Process finished with exit code 0
-    return 0;
 }
 
 void e14_17_05() {
