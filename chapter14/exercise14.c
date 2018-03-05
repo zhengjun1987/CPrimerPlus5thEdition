@@ -1,6 +1,6 @@
 #include <printf.h>
-#include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 //  Author:Zheng Jun
 //  Date:2018/3/2 20:35
@@ -40,6 +40,8 @@ typedef struct bem {
 
 void showNameInfo(BEM *pBem);
 
+void e14_17_07();
+
 typedef struct house HOUSE;
 typedef struct month MONTH;
 const MONTH year[12] = {
@@ -57,16 +59,30 @@ const MONTH year[12] = {
         {"December",  "DEC", 31, 12}
 };
 
+typedef struct seat {
+    int seat_id;
+    bool available;
+    char fname[30];
+    char lname[30];
+    
+} SEAT;
+
 typedef struct lens {
     float foclen;   /* 焦距 */
     float fstop;    /* 孔径 */
     char brand[30]; /* 品牌 */
 } LENS;
 
-int main() {
+int e_14() {
 //    e14_17_02();
 //    e14_17_05();
 //    e14_17_06();
+//    e14_17_07();
+
+    return 0;
+}
+
+void e14_17_07() {
     BEM *pb;
     BEM deb = {
             6,
@@ -82,7 +98,6 @@ int main() {
 //    Arcturan
 //    cturan
 //    Bebnazel Gerklpok is a 6-limbed Arcturan
-    return 0;
 }
 
 void showNameInfo(BEM *pBem) {
