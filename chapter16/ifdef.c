@@ -11,7 +11,7 @@
 
 #define LIMIT 4
 
-int main(){
+int ifd(){
     int total = 0;
     for (int i = 0; i < LIMIT; ++i) {
         total += 2*(i+1)*(i+1)+1;
