@@ -9,7 +9,7 @@ void why_me();
  *  Desc:C预定义宏标识符
  */
 
-int main(){
+int prdf(){
     printf("The date is %s\n",__DATE__);
     printf("The time is %s\n",__TIME__);
     printf("The FILE is %s\n",__FILE__);
