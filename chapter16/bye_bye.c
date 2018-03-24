@@ -36,3 +36,14 @@ void too_bad(void){
 //    Seesaw Software!
 //
 //    Process finished with exit code 0
+
+
+//    Enter an integer!
+//    q
+//    There is no integer!
+//    Seesaw Software extends its heartfelt condolences
+//    to you upon the failure of your program.
+//    Thus terminates another magnificent program from
+//    Seesaw Software!
+//
+//    Process finished with exit code 1
