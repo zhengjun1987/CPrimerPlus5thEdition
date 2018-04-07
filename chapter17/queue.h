@@ -10,7 +10,10 @@
 #ifndef CPRIMERPLUS5THEDITION_QUEUE_H
 #define CPRIMERPLUS5THEDITION_QUEUE_H
 #define MAXQUEUE 10
-typedef int Item;
+typedef struct item {
+    long arrival;
+    int processtime;
+} Item;
 typedef struct node {
     Item item;
     struct node *next;
