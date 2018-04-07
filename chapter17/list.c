@@ -36,18 +36,18 @@ unsigned int size(const List *list) {
     return count;
 }
 
-bool addItem(List *list,Item *item){
-    Node *node = (Node *)malloc(sizeof(Node));
-    if (node==NULL)
+bool addItem(List *list, Item *item) {
+    Node *node = (Node *) malloc(sizeof(Node));
+    if (node == NULL)
         return false;
     node->item = *item;
     node->next = NULL;
 
     Node *head = *list;
-    if (head==NULL)
+    if (head == NULL)
         *list = node;
     else {
-        while (head->next != NULL){
+        while (head->next != NULL) {
             head = head->next;
         }
         head->next = node;
@@ -55,17 +55,17 @@ bool addItem(List *list,Item *item){
     return true;
 }
 
-void traverse(const List *list, void (*pFun)(Item item)){
+void traverse(const List *list, void (*pFun)(Item item)) {
     Node *head = *list;
-    while (head != NULL){
+    while (head != NULL) {
         (*pFun)(head->item);
         head = head->next;
     }
 }
 
-void clear(List *list){
+void clear(List *list) {
     Node *pSave;
-    while (*list != NULL){
+    while (*list != NULL) {
         pSave = (*list)->next;
         free(*list);
         *list = pSave;
